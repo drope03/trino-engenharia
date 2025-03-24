@@ -5,7 +5,7 @@ import { InnerContainer } from "../inner-container";
 
 export function Appbar() {
   return (
-    <header className="w-full flex flex-col items-center ">
+    <header className="w-full flex flex-col items-center mb-6">
       <InfoTop />
       <InnerContainer className="flex-row items-center justify-between">
         <Image src={Logo} alt="Logo" width={60} height={32} />
