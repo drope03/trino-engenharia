@@ -1,26 +1,31 @@
 'use client';
 
-import { useState } from 'react';
-import ReactPlayer from 'react-player/lazy';
+import { useState, useEffect } from 'react';
+import dynamic from 'next/dynamic';
+
+const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false });
 
 export default function HeroSection() {
-  // Se quiser iniciar automaticamente, defina true
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(true);  // Inicializar o estado como true
   const [isHovered, setIsHovered] = useState(false);
 
+  useEffect(() => {
+    setIsPlaying(true); // ou o valor que você preferir
+  }, []);
+
   const togglePlay = () => {
-    setIsPlaying(prevState => !prevState);
+    setIsPlaying((prevState) => !prevState);
   };
 
   return (
     <div
-      className="relative w-screen h-screen overflow-hidden"
+      className="relative"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <ReactPlayer
         url="/videos/hero-section.mp4"
-        className="w-full h-full"
+        className="min-w-full h-full rounded-lg"
         playing={isPlaying}
         muted
         loop
