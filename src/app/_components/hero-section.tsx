@@ -1,16 +1,16 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
+import { useState, useEffect } from 'react';
 
 const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false });
 
 export default function HeroSection() {
-  const [isPlaying, setIsPlaying] = useState(true);  // Inicializar o estado como true
+  const [isPlaying, setIsPlaying] = useState(true);  
   const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
-    setIsPlaying(true); // ou o valor que você preferir
+    setIsPlaying(true); 
   }, []);
 
   const togglePlay = () => {

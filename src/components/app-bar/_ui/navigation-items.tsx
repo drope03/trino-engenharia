@@ -1,5 +1,12 @@
 import { MenuIcon } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui";
 import Link from "next/link";
 import { navigation } from "@/constants";
 
@@ -19,9 +26,15 @@ export function ViewMobile() {
         <MenuIcon className="te" />
       </SheetTrigger>
       <SheetContent>
-        <nav className="hidden lg:flex">
+        <SheetHeader>
+          <SheetTitle />
+          <SheetDescription />
+        </SheetHeader>
+        <nav className="lg:hidden flex flex-col gap-4">
           {navigation.map((item) => (
-            <Link key={item?.id} href={item?.href}>{item?.name}</Link>
+            <Link key={item?.id} href={item?.href}>
+              {item?.name}
+            </Link>
           ))}
         </nav>
       </SheetContent>
@@ -31,9 +44,11 @@ export function ViewMobile() {
 
 export function ViewDesktop() {
   return (
-    <nav className="hidden lg:flex">
+    <nav className="hidden lg:flex gap-4">
       {navigation.map((item) => (
-        <Link key={item?.id} href={item?.href}>{item?.name}</Link>
+        <Link key={item?.id} href={item?.href}>
+          {item?.name}
+        </Link>
       ))}
     </nav>
   );
