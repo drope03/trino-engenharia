@@ -5,9 +5,9 @@ import { InnerContainer } from "../inner-container";
 
 export function Appbar() {
   return (
-    <header className="w-full flex flex-col items-center mb-6">
+    <header className="w-full flex flex-col items-center">
       <InfoTop />
-      <InnerContainer className="flex-row items-center justify-between">
+      <InnerContainer className="flex-row items-center justify-between py-1">
         <Image src={Logo} alt="Logo" width={60} height={32} />
         <NavigationItems />
       </InnerContainer>

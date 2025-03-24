@@ -23,7 +23,7 @@ export function ViewMobile() {
   return (
     <Sheet>
       <SheetTrigger asChild className="flex lg:hidden">
-        <MenuIcon className="te" />
+        <MenuIcon className="text-text-primary" />
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>
@@ -32,7 +32,7 @@ export function ViewMobile() {
         </SheetHeader>
         <nav className="lg:hidden flex flex-col gap-4">
           {navigation.map((item) => (
-            <Link key={item?.id} href={item?.href}>
+            <Link key={item?.id} href={item?.href} className="text-sm font-medium hover:text-primary-dark">
               {item?.name}
             </Link>
           ))}
@@ -46,7 +46,7 @@ export function ViewDesktop() {
   return (
     <nav className="hidden lg:flex gap-4">
       {navigation.map((item) => (
-        <Link key={item?.id} href={item?.href}>
+        <Link key={item?.id} href={item?.href} className="text-sm font-medium hover:text-primary-dark">
           {item?.name}
         </Link>
       ))}
