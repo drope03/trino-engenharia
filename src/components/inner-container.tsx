@@ -10,7 +10,7 @@ export function InnerContainer({
   return (
     <div
       className={twMerge(
-        `w-[90%] h-auto flex flex-col lg:w-[80%] xl:w-[1026px] 2xl:w-[1300px] 3xl:w-[1536px]`,
+        `w-[90%] h-auto flex flex-col lg:w-[85%] xl:w-[1200px] 2xl:w-[1400px]`,
         className
       )}
       // style={{ border: "2px solid #00000020" }}

@@ -1,7 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
+* {
+  box-sizing: border-box;
+  overscroll-behavior: contain;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: #00000000;
+  scrollbar-width: thin;
+  scrollbar-color: #fab603 #0000002c;
+}
 
 :root {
   --primary: #fab603;
@@ -12,8 +19,10 @@
   --text-secondary: #33303e;
   --text-third: #5f5c6b;
 
+  --custom-gray: #f7f5f5;
+
   --radius: 0.625rem;
-  --background: #f7f5f5;
+  --background: #FAFAFA; 
   --foreground: oklch(0.141 0.005 285.823);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.141 0.005 285.823);
@@ -52,6 +61,7 @@
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
   --color-text-third: var(--text-third);
+  --color-custom-gray: var(--custom-gray);
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -91,10 +101,6 @@
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-
   body {
     @apply bg-background text-foreground;
   }
