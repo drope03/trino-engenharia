@@ -5,9 +5,9 @@ const titleStyles = tv({
   base: "font-semibold",
   variants: {
     typography: {
-      h1: "text-xl md:text-2xl xl:text-[40px] 3xl:text-4xl",
-      h2: "text-3xl",
-      h3: "text-2xl",
+      h1: "text-xl md:text-2xl xl:text-4xl 2xl:text-[40px]",
+      h2: "text-base md:text-xl xl:text-3xl 2xl:text-4xl",
+      h3: "text-sm md:text-base xl:text-xl",
       h4: "text-xl",
       h5: "",
       h6: "text-xs md:text-sm ",

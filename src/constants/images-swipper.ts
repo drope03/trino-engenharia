@@ -7,4 +7,13 @@ import Image6 from "@/assets/carousel/carousel-6.webp";
 import Image7 from "@/assets/carousel/carousel-7.webp";
 import Image8 from "@/assets/carousel/carousel-8.webp";
 
-export const imagesSwiper = [Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8];
+export const imagesSwiper = [
+  { src: Image1, title: "Terraplanagem", description: "Base sólida para construções." },
+  { src: Image2, title: "Infraestrutura", description: "Projetos de tráfego e pavimentação." },
+  { src: Image3, title: "Pavimentação", description: "Superfícies duráveis para estradas." },
+  { src: Image4, title: "Equipamentos", description: "Frota própria e tecnologia." },
+  { src: Image5, title: "Sustentabilidade", description: "Soluções ecológicas e drenagem." },
+  { src: Image6, title: "Atendimento", description: "Consultoria personalizada." },
+  { src: Image7, title: "Inovação", description: "Soluções inteligentes e avançadas." },
+  { src: Image8, title: "Qualidade", description: "Excelência em cada etapa do projeto." },
+];

@@ -9,7 +9,7 @@ import { Autoplay, EffectFade } from "swiper/modules";
 
 export function CarouselCases() {
   return (
-    <section className="relative w-full h-[416px] bg-zinc-300/25 rounded-md p-4">
+    <section className="relative w-full min-h-[288px] bg-zinc-300/25 rounded-md p-4">
       <Swiper
         loop={true}
         spaceBetween={20}
@@ -21,11 +21,16 @@ export function CarouselCases() {
           1024: { slidesPerView: 3 },
         }}
         modules={[Autoplay, EffectFade]}
-        autoplay={{ delay: 1000, disableOnInteraction: false }}
+        autoplay={{ delay: 1500, disableOnInteraction: false }}
       >
-        {imagesSwiper.map((src, index) => (
+        {imagesSwiper.map((item, index) => (
           <SwiperSlide key={index}>
-            <CardCases source={src} index={index} />
+            <CardCases
+              index={index}
+              source={item.src}
+              title={item.title}
+              description={item.description}
+            />
           </SwiperSlide>
         ))}
       </Swiper>
