@@ -1,6 +1,6 @@
 import { BoxCard } from "./box-card";
 import { services } from "@/constants";
-import { InnerContainer } from "@/components";
+import { InnerContainer, Title } from "@/components";
 
 export function Services() {
   function getGridClasses(index: number): string {
@@ -23,6 +23,16 @@ export function Services() {
   }
   return (
     <section className="w-full min-h-96 bg-cover bg-center flex flex-col items-center justify-center py-6">
+      <article className="w-full flex flex-col items-center text-center gap-2 mt-8 mb-6">
+        <Title
+          typography="h2"
+          color="gradient"
+          font="poppins"
+          className="uppercase leading-[48px]"
+        >
+          Além do Comum <br /> Soluções que Transformam
+        </Title>
+      </article>
       <InnerContainer>
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-6 lg:grid-cols-5 lg:grid-rows-7 lg:gap-2">
           {services.map((item, index) => (
