@@ -13,7 +13,7 @@ export function InnerContainer({
         `w-[90%] h-auto flex flex-col lg:w-[85%] xl:w-[1200px] 2xl:w-[1400px]`,
         className
       )}
-      // style={{ border: "2px solid #00000020" }}
+      style={{ border: "2px solid #00000020" }}
     >
       {children}
     </div>

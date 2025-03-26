@@ -1,8 +1,8 @@
 import "@/styles/globals.css";
 import type { Metadata } from "next";
-import { Appbar } from "@/components";
 import { Inter, Poppins } from "next/font/google";
 import { description, keywords } from "@/constants";
+import { Appbar, WhatsAppIcon, Footer } from "@/components";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -25,13 +25,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <head>
         <meta name="theme-color" content="#fab603" />
       </head>
       <body className={`${inter.className} ${poppins.className} antialiased`}>
         <Appbar />
         {children}
+        <WhatsAppIcon />
+        <Footer />
       </body>
     </html>
   );

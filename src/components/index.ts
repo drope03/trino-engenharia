@@ -1,4 +1,5 @@
 export * from "./title";
+export * from "./footer";
 export * from "./app-bar";
 export * from "./paragraph";
 export * from "./whats-app-icon";

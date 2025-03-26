@@ -1,12 +1,11 @@
-import { WhatsAppIcon } from "@/components";
-import { HeroSection, InfoContact } from "./_components";
+import { HeroSection, Services, InfoContact } from "./_components";
 
 export default function Page() {
   return (
-    <main className="relative w-full h-screen flex flex-col items-center gap-6">
+    <main className="relative w-full min-h-screen flex flex-col items-center gap-6">
       <HeroSection />
+      <Services />
       <InfoContact />
-      <WhatsAppIcon />
     </main>
   );
 }
