@@ -15,8 +15,8 @@ export function WhatsAppIcon() {
     <section className="w-full flex items-center justify-center">
       <InnerContainer className="fixed bottom-14 z-10">
         <Image
-          // width={44}
-          // height={44}
+          width={44}
+          height={44}
           src={WhatsApp}
           alt="Ícone do WhatsApp"
           className="absolute right-0 cursor-pointer rounded-full"
