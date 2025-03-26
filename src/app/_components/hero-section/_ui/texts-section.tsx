@@ -1,6 +1,6 @@
 // import { Button } from "@/components/ui";
 // import { ArrowUpRight } from "lucide-react";
-import { Title, SpanWeightColor } from "@/components";
+import { Title } from "@/components";
 
 export function TextsSection() {
   return (
