@@ -14,7 +14,7 @@ export function ViewMobile() {
   return (
     <Sheet>
       <SheetTrigger asChild className="flex lg:hidden">
-        <MenuIcon className="text-text-primary cursor-pointer" />
+        <MenuIcon className="text-white cursor-pointer" />
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>

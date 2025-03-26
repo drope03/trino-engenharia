@@ -3,8 +3,7 @@
 import Image from "next/image";
 import WhatsApp from "@/assets/whatsapp-icon.svg";
 import { InnerContainer } from "./inner-container";
-
-export const whatsappNumber = 11949638434;
+import { whatsappNumber } from "@/constants/config-app";
 
 export function WhatsAppIcon() {
   const handleClick = () => {
@@ -13,7 +12,7 @@ export function WhatsAppIcon() {
 
   return (
     <section className="w-full flex items-center justify-center">
-      <InnerContainer className="fixed bottom-14 z-10">
+      <InnerContainer className="fixed bottom-14 lg:w-[95%] xl:w-[1280px] 2xl:w-[1510px] z-10">
         <Image
           width={44}
           height={44}

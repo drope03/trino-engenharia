@@ -9,7 +9,7 @@ import { Autoplay, EffectFade } from "swiper/modules";
 
 export function CarouselCases() {
   return (
-    <section className="relative w-full min-h-[288px] bg-zinc-300/25 rounded-md p-4">
+    <section className="relative w-full min-h-60 bg-gradient-to-t from-zinc-950/90 via-zinc-800/20 to-zinc-700/00 rounded-md px-4">
       <Swiper
         loop={true}
         spaceBetween={20}
