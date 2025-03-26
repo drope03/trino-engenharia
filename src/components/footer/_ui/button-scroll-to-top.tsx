@@ -13,9 +13,9 @@ export function ButtonScrollToTop() {
 
   return (
     <Button
-      variant={"highlight"}
+      variant={"default"}
       onClick={scrollToTop}
-      className="w-[170px] h-10 bg-light/20 sm:bg-highlight text-white hover:text-turquoise sm:text-turquoise sm:size-8 sm:absolute sm:-top-11 sm:right-0 sm:z-[5]"
+      className="w-[170px] h-10 bg-white/20 sm:bg-primary-dark text-white hover:text-turquoise sm:text-turquoise sm:size-8 sm:absolute sm:-top-9 sm:left-0 sm:z-[5] rounded-full"
     >
       <h3 className="sm:hidden">Voltar ao topo</h3>
       <ArrowUp />
