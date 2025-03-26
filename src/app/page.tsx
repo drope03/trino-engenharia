@@ -5,7 +5,7 @@ export default function Page() {
     <main className="relative w-full min-h-screen flex flex-col items-center">
       <HeroSection />
       <Services />
-      {/* <InfoContact /> */}
+      <InfoContact />
     </main>
   );
 }
